@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ============================================= -->
+    <!-- METADATA & KONFIGURASI DASAR -->
+    <!-- ============================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BY-WANZZ v5 - Cyber Security Testing Suite">
+    <meta name="author" content="BY-WANZZ Team">
+    <meta name="theme-color" content="#9d00ff">
+    
+    <!-- ============================================= -->
+    <!-- JUDUL WEBSITE -->
+    <!-- ============================================= -->
+    <title>⚡ BY-WANZZ v5 | Cyber Attack Suite</title>
+    
+    <!-- ============================================= -->
+    <!-- FAVICON -->
+    <!-- ============================================= -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    
+    <!-- ============================================= -->
+    <!-- GOOGLE FONTS -->
+    <!-- ============================================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" 
+          rel="stylesheet"
+          crossorigin="anonymous">
+    
+    <!-- ============================================= -->
+    <!-- FILE CSS EKSTERNAL -->
+    <!-- ============================================= -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="video-fallback.css">
+    
+    <!-- ============================================= -->
+    <!-- PRELOAD RESOURCES -->
+    <!-- ============================================= -->
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://files.catbox.moe/4e98kx.mp4" as="video" type="video/mp4">
+</head>
+<body>
+    <!-- ============================================= -->
+    <!-- VIDEO BACKGROUND -->
+    <!-- ============================================= -->
+    <div id="videoContainer">
+        <video autoplay muted loop playsinline id="bgVideo" 
+               preload="metadata" crossorigin="anonymous">
+            <source src="https://files.catbox.moe/4e98kx.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-fallback" id="videoFallback"></div>
+    </div>
+    
+    <!-- ============================================= -->
+    <!-- ANIME CHARACTER FLOATING -->
+    <!-- ============================================= -->
+    <div class="anime-char" style="top: 10%; left: 5%;">⚡</div>
+    <div class="anime-char" style="top: 20%; right: 10%;">💥</div>
+    <div class="anime-char" style="bottom: 30%; left: 15%;">🌀</div>
+    <div class="anime-char" style="bottom: 10%; right: 20%;">🔥</div>
+    
+    <!-- ============================================= -->
+    <!-- SCROLL HINT -->
+    <!-- ============================================= -->
+    <div class="scroll-hint" id="scrollHint">
+        🔽 Scroll untuk melihat lebih banyak
+    </div>
+    
+    <!-- ============================================= -->
+    <!-- LOADING SCREEN -->
+    <!-- ============================================= -->
+    <div class="cyber-loader" id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">BY-WANZZ v5 LOADING...</div>
+    </div>
+    
+    <!-- ============================================= -->
+    <!-- MAIN CONTENT CONTAINER -->
+    <!-- ============================================= -->
+    <div class="main-container" id="mainContainer">
+        <!-- Konten utama akan di-load oleh JavaScript -->
+        <div id="content"></div>
+    </div>
+    
+    <!-- ============================================= -->
+    <!-- NOTIFICATION SYSTEM -->
+    <!-- ============================================= -->
+    <div class="anime-notification" id="notification">
+        <div class="notif-title" id="notifTitle">Notification</div>
+        <div class="notif-message" id="notifMessage">Message</div>
+    </div>
+    
+    <!-- ============================================= -->
+    <!-- PLAY VIDEO BUTTON (Jika autoplay diblokir) -->
+    <!-- ============================================= -->
+    <button id="playVideoBtn" class="video-play-btn">
+        ▶ Play Background Video
+    </button>
+    
+    <!-- ============================================= -->
+    <!-- FILE JAVASCRIPT EKSTERNAL -->
+    <!-- ============================================= -->
+    <script src="script.js"></script>
+    
+    <!-- ============================================= -->
+    <!-- ANALYTICS & ERROR TRACKING (Optional) -->
+    <!-- ============================================= -->
+    <script>
+        // Error tracking
+        window.addEventListener('error', function(e) {
+            console.error('BY-WANZZ Error:', e.error);
+        });
+        
+        // Load time tracking
+        window.addEventListener('load', function() {
+            console.log('BY-WANZZ v5 loaded successfully');
+        });
+    </script>
+</body>
+</html>
