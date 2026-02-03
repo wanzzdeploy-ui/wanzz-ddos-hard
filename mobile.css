@@ -1,0 +1,300 @@
+/* ============================================= */
+/* BY-WANZZ v5 - MOBILE STYLESHEET */
+/* File: mobile.css */
+/* Deskripsi: Styles khusus untuk mobile (< 768px) */
+/* ============================================= */
+
+@media (max-width: 1600px) {
+    .cyber-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: auto;
+    }
+    
+    .panel-left, .panel-center, .panel-right {
+        height: auto;
+        max-height: none;
+    }
+    
+    .anime-terminal {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ============ GRID ADJUSTMENTS ============ */
+    .cyber-grid {
+        padding: var(--space-sm);
+        gap: var(--space-sm);
+    }
+    
+    /* ============ HEADER MOBILE ============ */
+    .header {
+        flex-direction: column;
+        gap: var(--space-md);
+        padding: var(--space-md);
+    }
+    
+    .main-title {
+        font-size: 1.8em;
+        text-align: center;
+        padding: var(--space-sm);
+    }
+    
+    .live-badges {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .badge {
+        font-size: var(--font-xs);
+        padding: 5px 10px;
+    }
+    
+    /* ============ STATS GRID MOBILE ============ */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+    
+    .stat-value {
+        font-size: 1.8em;
+    }
+    
+    .stat-label {
+        font-size: 0.8em;
+    }
+    
+    /* ============ FOOTER MOBILE ============ */
+    .footer {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+        padding: var(--space-md);
+    }
+    
+    .control-block {
+        padding: var(--space-sm);
+    }
+    
+    /* ============ ATTACK BUTTONS MOBILE ============ */
+    .attack-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .anime-btn {
+        padding: 15px;
+        font-size: var(--font-md);
+    }
+    
+    /* ============ METHOD GRID MOBILE ============ */
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* ============ BUG GRID MOBILE ============ */
+    .bug-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+    
+    .bug-card {
+        padding: 10px;
+        font-size: var(--font-sm);
+    }
+    
+    /* ============ TERMINAL MOBILE ============ */
+    .anime-terminal {
+        min-height: 300px;
+        max-height: 350px;
+        padding: var(--space-md);
+        font-size: 0.85em;
+    }
+    
+    .terminal-line {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .terminal-time {
+        min-width: auto;
+        font-size: 0.8em;
+    }
+    
+    /* ============ TARGET INPUT MOBILE ============ */
+    .target-input {
+        flex-direction: column;
+    }
+    
+    .target-input input {
+        width: 100%;
+        padding: 12px;
+        font-size: var(--font-md);
+    }
+    
+    /* ============ PANEL PADDING MOBILE ============ */
+    .panel-left, .bug-modules, .viz-panel {
+        padding: var(--space-md);
+    }
+    
+    .panel-title {
+        font-size: 1.2em;
+        margin-bottom: var(--space-lg);
+    }
+    
+    /* ============ VISUALIZATION MOBILE ============ */
+    .viz-panel {
+        min-height: 250px;
+    }
+    
+    .viz-container {
+        height: 150px;
+    }
+    
+    /* ============ NOTIFICATION MOBILE ============ */
+    .anime-notification {
+        max-width: 90%;
+        right: 5%;
+        left: 5%;
+        padding: var(--space-sm) var(--space-md);
+    }
+    
+    .notif-title {
+        font-size: var(--font-md);
+    }
+    
+    .notif-message {
+        font-size: var(--font-sm);
+    }
+    
+    /* ============ SCROLL HINT MOBILE ============ */
+    .scroll-hint {
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+    
+    /* ============ VIDEO PLAY BUTTON MOBILE ============ */
+    .video-play-btn {
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 16px;
+        font-size: var(--font-sm);
+    }
+    
+    /* ============ ANIME CHARACTERS MOBILE ============ */
+    .anime-char {
+        font-size: 60px;
+        opacity: 0.05;
+    }
+    
+    /* ============ LOADING SCREEN MOBILE ============ */
+    .loader-ring {
+        width: 70px;
+        height: 70px;
+        border-width: 4px;
+    }
+    
+    .loader-text {
+        font-size: var(--font-md);
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bug-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .anime-terminal {
+        min-height: 250px;
+        max-height: 300px;
+    }
+    
+    .footer {
+        padding: 10px;
+    }
+    
+    .control-block {
+        padding: 8px;
+        font-size: var(--font-sm);
+    }
+}
+
+/* Tablet landscape (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cyber-grid {
+        grid-template-columns: 250px 1fr;
+        gap: 15px;
+    }
+    
+    .panel-right {
+        grid-column: 1 / -1;
+    }
+    
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .method-card:hover,
+    .bug-card:hover,
+    .stat-box:hover,
+    .anime-btn:hover {
+        transform: none;
+    }
+    
+    .anime-btn:active {
+        transform: scale(0.98);
+    }
+    
+    input, select, button {
+        min-height: 44px; /* Minimum touch target size */
+    }
+    
+    .method-card, .bug-card {
+        padding: 15px;
+    }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header, .panel-left, .bug-modules, .viz-panel, .attack-stats {
+        backdrop-filter: blur(8px);
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .anime-char,
+    .header::before,
+    .loader-ring,
+    .scroll-hint,
+    .terminal-line,
+    .viz-particle,
+    .badge,
+    .main-title,
+    .header {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    .method-card:hover,
+    .bug-card:hover,
+    .stat-box:hover,
+    .anime-btn:hover {
+        transform: none !important;
+    }
+}
